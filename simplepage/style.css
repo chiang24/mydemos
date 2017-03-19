@@ -1,0 +1,142 @@
+body{
+    margin: 0;
+}
+ul{
+    padding: 0px;
+    list-style-type: none;
+}
+/*teaminfo模块*/
+.teaminfo{
+    text-align: center;
+}
+.teaminfo>img{
+    width: 72px;
+    height: 72px;
+    border-radius:50%;
+    margin-top: 60px;
+}
+.skilllist{
+    margin-top:28px;
+}
+.teaminfo > .skilllist>li{
+    min-width: 128px;
+    line-height: 24px;
+    background-color: #d8d8d8;
+    display: inline-block;
+    margin-bottom: 24px;
+    margin-right :10px;
+    margin-left: 10px;
+}
+/*banner模块*/
+.banner{
+    text-align:center;
+    background-color: #efefef;
+    padding-top: 46px; 
+    padding-bottom: 34px;
+}
+.banner h2{
+    display: inline-block;
+    min-width: 200px;
+    line-height: 34px;
+    background-color: #d8d8d8;
+    border-radius: 14px;
+    margin-top:10px;
+    margin-bottom: 9px; 
+    padding: 3px 0;
+}
+.banner .slogan2{
+    padding-left: 2em;
+    padding-right: 2em;
+}
+.banner .slogan2>h2{
+    padding:3px 70px;
+}
+.banner .slogan2{
+    display: none;
+}
+@media (min-width:600px){
+    .banner .slogan1{
+        display: none;
+    }
+    .banner .slogan2{
+    display: block;
+}
+}
+.banner>p{
+    max-width:250px;
+    line-height: 24px;
+    border-radius: 14px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #E8E7E7;
+}
+@media (min-width:600px){
+    .banner >p{
+        /*max-width: 536px;*/
+        max-width: none;
+      margin-left: 52px;
+      margin-right: 52px;
+    }
+}
+/*projects模块*/
+.projects{
+    margin:0 16px;
+    padding-bottom: 32px;
+}
+.projects .item>img{
+    max-width:100%;
+    border-radius: 4px;
+    margin-top:26px;
+    
+}
+@media(min-width:600px){
+  .projects >ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;    
+  }
+ .projects >ul>li{
+    width: calc(50% - 16px);
+    box-sizing:border-box;
+  }
+  /*解决width大于500px图片不自适应问题*/
+  .projects .item>img{
+      display: flex;
+      flex-grow: 1; 
+    min-width:288px; 
+  }
+}
+@media(min-width:1000px){
+  .projects >ul{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;    
+  }
+   .projects >ul>li{
+    width: 30%;
+    box-sizing:border-box;
+  }
+}
+@media (min-width: 1200px){
+     .projects >ul{
+         width: 960px;
+         margin-left: auto;
+         margin-right: auto;
+     }
+}
+.projects .item>h3{
+    background-color:#bcbcbc;
+    border-radius: 4px; 
+    max-width: 204px;
+    line-height: 24px;
+    margin-top: 20px;
+    margin-bottom: 14px;
+}
+.projects .item>p{
+    background:#ececec;
+    border-radius:4px;
+    line-height: 16px;
+    margin-top: 14px;
+}
+
