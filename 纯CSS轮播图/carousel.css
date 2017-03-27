@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+ol{
+    list-style: none;
+}
+.demo{
+    display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:center;
+      height: 100vh;
+}
+input[name=currentSlide]{
+      display: none;
+}
+.slides{
+    position: relative;
+    width: 750px;
+    height: 450px;
+}
+.slides>li{
+    position: absolute;
+    visibility: hidden;
+}
+.slides>li>img{
+    height: 450px;
+    min-width:750px; 
+    border-radius: 3px;
+}
+.controls{
+    display: flex;
+    flex-direction: row;
+}
+.controls>li{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background-color: #ddd;
+    color: #333;
+    text-align: center;
+    line-height: 18px;
+    font-size: 11px;
+    margin: 0.5em;
+    margin-top: 5px;
+}
+
+input[name="currentSlide"]:nth-child(1):checked ~ .slides>li:nth-child(1),
+input[name="currentSlide"]:nth-child(2):checked ~ .slides>li:nth-child(2),
+input[name="currentSlide"]:nth-child(3):checked ~ .slides>li:nth-child(3),
+input[name="currentSlide"]:nth-child(4):checked ~ .slides>li:nth-child(4),
+input[name="currentSlide"]:nth-child(5):checked ~ .slides>li:nth-child(5){
+    visibility: visible;
+    animation: slides 1s;
+}
+
+input[name="currentSlide"]:nth-child(1):checked ~ .controls>li:nth-child(1),
+input[name="currentSlide"]:nth-child(2):checked ~ .controls>li:nth-child(2),
+input[name="currentSlide"]:nth-child(3):checked ~ .controls>li:nth-child(3),
+input[name="currentSlide"]:nth-child(4):checked ~ .controls>li:nth-child(4),
+input[name="currentSlide"]:nth-child(5):checked ~ .controls>li:nth-child(5){
+    background: #888;
+    color: white;
+}
+    
+@keyframes slides{
+      from {
+        opacity: 0.5;
+      }
+      to {
+        opacity: 0.98;
+      }
+}
