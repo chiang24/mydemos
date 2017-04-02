@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+/*顶部标题*/
+
+.top {
+    width: 100%;
+    background: #F24643;
+    height: 200px;
+}
+
+.top>h1 {
+    font-size: 60px;
+    padding-top: 60px;
+    padding-left: 465px;
+    color: #ffffff;
+}
+
+/*内容主体*/
+
+.mine {
+    width: 700px;
+    display: flex;
+    position: absolute;
+    left: 50%;
+    margin-left: -350px;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.editor {
+    padding-top: 40px;
+    padding-right: 30px;
+}
+
+.editor>ol>li>input {
+    height: 25px;
+    line-height: 25px;
+}
+
+.editor>ol>h3 {
+    padding-bottom: 20px;
+    margin-left: -17px;
+}
+button {
+    width: 75px;
+    margin-top: 20px;
+}
+.preview {
+    display: flex;
+    align-self: center;
+    font-size: 15px;
+}
+
+/*页脚*/
+
+.footerwrapper {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+.footer {
+    max-width: 768px;
+    padding: 20px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #D8D8D8;
+    font-size: 15px;
+}
+
+.footer .github>a {
+    color: #333333;
+    text-decoration: none;
+}
+
