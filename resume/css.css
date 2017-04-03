@@ -1,0 +1,243 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #CACACA;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 1rem;
+    }
+    body h3 {
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+    html {
+        font-size: 10px;
+    }
+}
+
+body h3 {
+    font-size: 16px;
+}
+
+.resume {
+    position: relative;
+    border-radius: 2px;
+    background: #ffffff;
+    width: 1000px;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media (max-width: 992px) {
+    .resume {
+        width: auto;
+    }
+}
+@media (max-width: 768px) {
+    body .resume {
+        width: 400px;
+    }
+}
+@media (max-width: 600px) {
+    .resume {
+        max-width: 350px;
+    }
+}
+
+
+
+.resume>.title {
+    margin-bottom: 20px;
+    border-bottom: 2px solid #D2D2D2;
+}
+
+.resume>.title .img {
+    position: relative;
+    height: 120px;
+    text-align: center;
+}
+
+.resume>.title .img .tri-left,
+.resume>.title .img .tri-right {
+    position: absolute;
+    border-top: 40px solid #DADADA;
+    border-bottom: 40px solid transparent;
+    display: inline-block;
+}
+
+.resume>.title .img .tri-left {
+    left: 0;
+    border-left: 40px solid #DADADA;
+    border-right: 40px solid transparent;
+}
+
+.resume>.title .img .profile {
+    display: inline-block;
+    padding-top: 20px;
+}
+
+.resume>.title .img .profile img {
+    border-radius: 60px;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+}
+
+.resume>.title .img .tri-right {
+    right: 0;
+    border-right: 40px solid #DADADA;
+    border-left: 40px solid transparent;
+}
+
+.resume>.title .info1 {
+    text-align: center;
+}
+
+.resume>.title .info1 h1 {
+    margin-top: 40px;
+    font-size: 18px;
+}
+
+body h2 {
+    font-size: 18px;
+}
+
+.resume>.title .info1 p {
+    margin-top: 20px;
+    word-spacing: 30px;
+    font-weight: 600;
+}
+
+.resume>.title .contact {
+    word-spacing: 5px;
+    margin: 20px;
+    text-align: center;
+}
+
+.resume>.title .contact * {
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.icon-email:before {
+    content: "\e60d";
+}
+
+.icon-phonenum:before {
+    content: "\e602";
+}
+
+a {
+    text-decoration: none;
+    color: #272727;
+}
+
+.icon-blog:before {
+    content: "\e6f1";
+}
+
+.icon-github:before {
+    content: "\e618";
+}
+
+.info3 {
+    border-bottom: 2px solid #D2D2D2;
+    padding-bottom: 20px;
+}
+
+.categories-title {
+    text-align: center;
+}
+
+.resume>.info3 .Basic-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.resume>.info3 .Basic-info h3,
+p {
+    font-weight: 200;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+.practice {
+    border-bottom: 2px solid #D2D2D2;
+    padding-bottom: 20px;
+}
+
+.practice h2 {
+    padding-top: 15px;
+}
+
+.practice>.practice-content p {
+    text-indent: 2em;
+    padding-top: 20px;
+}
+
+.skill-description {
+    border-bottom: 2px solid #D2D2D2;
+    padding-bottom: 20px;
+    padding-left: 20px;
+}
+
+.skill-description h2 {
+    padding-top: 15px;
+}
+
+.skill-description>.skill-description-content li>ul {
+    padding-bottom: 5px;
+}
+
+.skill-description>.skill-description-content li>ul>li {
+    list-style: none;
+}
+
+.aboutme h2 {
+    padding-top: 15px;
+}
+
+.aboutme>.self-description-content {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.aboutme>.self-description-content p {
+    padding-left: 2em;
+    padding-right: 2em;
+}
+
+.resume>.end .end-content {
+    position: relative;
+    height: 100px;
+}
+
+.resume>.end .end-tri-left,
+.resume>.end .end-tri-right {
+    position: absolute;
+    border-top: 40px solid transparent;
+    border-bottom: 40px solid #DADADA;
+    display: inline-block;
+}
+
+.resume>.end .end-content .end-tri-left {
+    left: 0;
+    border-left: 40px solid #DADADA;
+    border-right: 40px solid transparent;
+}
+
+.resume>.end .end-content .end-tri-right {
+    right: 0;
+    border-left: 40px solid transparent;
+    border-right: 40px solid #DADADA;
+}
