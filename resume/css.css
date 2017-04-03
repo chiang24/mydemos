@@ -55,11 +55,7 @@ body h3 {
         width: 400px;
     }
 }
-@media (max-width: 600px) {
-    .resume {
-        max-width: 350px;
-    }
-}
+
 
 
 
