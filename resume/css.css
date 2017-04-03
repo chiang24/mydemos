@@ -135,6 +135,13 @@ body h2 {
     display: inline-block;
     margin: 0 2px;
 }
+.iconfont {
+    font-family: "iconfont" !important;
+    font-size: 16px;
+    font-style: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
 
 .icon-email:before {
     content: "\e60d";
