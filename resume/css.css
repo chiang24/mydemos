@@ -3,7 +3,11 @@
     margin: 0px;
     box-sizing: border-box;
 }
-
+body, body h1, body h2, body h3 {
+    font-family: STHeitiSC-Light, 微软雅黑, Arial, sans-serif;
+    color: rgb(39, 39, 39);
+    line-height: 1.5;
+}
 body {
     background: #CACACA;
     background-size: cover;
@@ -13,6 +17,9 @@ body {
     body {
         font-size: 1rem;
     }
+    body h1 {
+    font-size: 1.7rem;
+}
     body h3 {
         font-size: 1.5rem;
         line-height: 1.5;
@@ -20,6 +27,9 @@ body {
     html {
         font-size: 10px;
     }
+    body .skill-description-content {
+    font-size: 1.4rem;
+}
 }
 
 body h3 {
@@ -193,6 +203,7 @@ p {
 
 .skill-description h2 {
     padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .skill-description>.skill-description-content li>ul {
