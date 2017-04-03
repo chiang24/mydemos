@@ -176,6 +176,11 @@ a {
     align-items: center;
     padding-bottom: 20px;
 }
+.resume>.info3 .Basic-info div{
+    font-family: STHeitiSC-Light,'微软雅黑',Arial,sans-serif;
+    color: #272727;
+    line-height: 1.5;
+}
 
 .resume>.info3 .Basic-info h3,
 p {
