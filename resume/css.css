@@ -36,6 +36,10 @@ body h3 {
     font-size: 16px;
 }
 
+body h2 {
+    font-size: 18px;
+}
+
 .resume {
     position: relative;
     border-radius: 2px;
@@ -57,7 +61,7 @@ body h3 {
 }
 
 
-
+/*title*/
 
 .resume>.title {
     margin-bottom: 20px;
@@ -111,10 +115,6 @@ body h3 {
     font-size: 18px;
 }
 
-body h2 {
-    font-size: 18px;
-}
-
 .resume>.title .info1 p {
     margin-top: 20px;
     word-spacing: 30px;
@@ -160,6 +160,9 @@ a {
     content: "\e618";
 }
 
+
+/*info3*/
+
 .info3 {
     border-bottom: 2px solid #D2D2D2;
     padding-bottom: 20px;
@@ -189,6 +192,8 @@ p {
     padding-top: 10px;
 }
 
+/*practice*/
+
 .practice {
     border-bottom: 2px solid #D2D2D2;
     padding-bottom: 20px;
@@ -202,6 +207,8 @@ p {
     text-indent: 2em;
     padding-top: 20px;
 }
+
+/*skill-description*/
 
 .skill-description {
     border-bottom: 2px solid #D2D2D2;
@@ -222,6 +229,8 @@ p {
     list-style: none;
 }
 
+/*aboutme*/
+
 .aboutme h2 {
     padding-top: 15px;
 }
@@ -236,6 +245,8 @@ p {
     padding-right: 2em;
     text-indent:2em;
 }
+
+/*end*/
 
 .resume>.end .end-content {
     position: relative;
