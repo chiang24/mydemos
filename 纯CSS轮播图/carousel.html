@@ -14,11 +14,11 @@
   <input type="radio"  name="currentSlide" id="slide4"></input>
   <input type="radio"  name="currentSlide" id="slide5"></input>
 <ol class="slides">
-  <li><img src="./1.jpeg" alt=""></li>
-  <li><img src="./2.jpg" alt=""></li>
-  <li><img src="./3.jpg" alt=""></li>
-  <li><img src="./4.jpg" alt=""></li>
-  <li><img src="./5.jpg" alt=""></li>
+  <li><img data-src="http://i4.buimg.com/567571/c24885f575e52f8c.jpg" src="http://i4.buimg.com/567571/06804d243fd092fe.png" alt=""></li>
+  <li><img data-src="http://i4.buimg.com/567571/b71e42d245e4ccd0.jpg" src="http://i4.buimg.com/567571/06804d243fd092fe.png" alt=""></li>
+  <li><img data-src="http://i4.buimg.com/567571/193305b5548088ac.jpg" src="http://i4.buimg.com/567571/06804d243fd092fe.png" alt=""></li>
+  <li><img data-src="http://i4.buimg.com/567571/7ebc10c3eb09163f.jpg" src="http://i4.buimg.com/567571/06804d243fd092fe.png" alt=""></li>
+  <li><img data-src="http://i1.piimg.com/4851/ed97d599b88d7a58.jpg" src="http://i4.buimg.com/567571/06804d243fd092fe.png" alt=""></li>
 </ol>
     <ol class="controls">
     <li><label for="slide1">1</label></li>
@@ -28,5 +28,25 @@
     <li><label for="slide5">5</label></li>
   </ol>
 </div>
+<script>
+var allImages = document.getElementsByTagName('img')
+    var i
+    for(i=0; i<allImages.length; i++){
+      let img = allImages[i]
+    
+      let url = img.getAttribute('data-src')
+    
+      let tempImage = document.createElement('img')
+      
+      let index = i
+    
+      tempImage.src = url // 真理：浏览器会加载 url
+    
+      tempImage.onload = function(){
+ 
+        img.src = url  // 10ms //b
+      }
+    } // 10ns
+</script>
 </body>
 </html>
