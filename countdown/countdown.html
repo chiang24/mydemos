@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>JS Bin</title>
+    <style>
+        body {
+            background-color: #353845;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            font-size: 5rem;
+            color: #fff;
+        }
+
+        #countdown {
+            height: 700px;
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            box-shadow: 1px 1px 8px 8px #2C2F3A;
+            position: relative;
+        }
+
+        button {
+            font-size: 20px;
+            color: #ffffff;
+            background: transparent;
+            border: 0;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            width: 4em;
+            margin-left: -2em;
+            text-align: center;
+        }
+
+        #bgc {
+            background-color: #FF5B97;
+            height: 700px;
+            width: 400px;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <div id=bgc></div>
+    <div id="countdown" background-color:#353845;>
+        <div class="time">
+            <span id=timeLeft>11:40</span>
+            <button id=button> <span class=word>START</span></button>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
