@@ -1,0 +1,150 @@
+body {
+    background: radial-gradient(circle #EEEFE7, #94908D);
+    background: radial-gradient(circle at 50% 0, #96A6E3, #345AED);
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+/*oval*/
+
+.oval1 {
+    width: 58px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: #F35165;
+    filter: drop-shadow(1px 1px 10px #333);
+}
+
+.oval2 {
+    width: 38px;
+    height: 10px;
+    background-color: #3C4151;
+}
+
+
+/*表盘clock*/
+
+.clock {
+    border: 10px solid #F35165;
+    height: 350px;
+    width: 350px;
+    border-radius: 50%;
+    position: relative;
+    filter: drop-shadow(1px 1px 15px #333);
+}
+
+.ring1 {
+    border: 5px solid #D74151;
+    height: 342px;
+    width: 342px;
+    border-radius: 50%;
+    margin-left: -0.7px;
+    filter: drop-shadow(1px 1px 10px #FC2934);
+}
+
+.ring2 {
+    border: 10px solid #F35165;
+    height: 323px;
+    width: 323px;
+    border-radius: 50%;
+    background-color: #FBFBFB;
+    position: relative;
+}
+
+.clock>.ring1>.ring2>span {
+    background-color: #55596D;
+}
+
+.clock>.ring1>.ring2>.s1 {
+    position: absolute;
+    margin-top: 0px;
+    margin-left: 161.5px;
+    width: 3.5px;
+    height: 18px;
+}
+
+.clock>.ring1>.ring2>.s2 {
+    width: 18px;
+    height: 3.5px;
+    position: absolute;
+    margin-top: 0px;
+    top: 50%;
+    margin-left: 0px;
+}
+
+.clock>.ring1>.ring2>.s3 {
+    width: 18px;
+    height: 3.5px;
+    position: absolute;
+    margin-top: 0px;
+    top: 50%;
+    margin-right: 0px;
+    right: 0%;
+}
+
+.clock>.ring1>.ring2>.s4 {
+    width: 3.5px;
+    height: 18px;
+    position: absolute;
+    top: 94.5%;
+    margin-left: 161.5px;
+}
+
+.clock>.circle {
+    width: 18px;
+    height: 18px;
+    background-color: #3C4151;
+    position: absolute;
+    margin: -9px 0 0 -9px;
+    left: 50%;
+    top: 50%;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+
+/*指针*/
+
+.clock>.second-hand {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 150px;
+    height: 4px;
+    background-color: #F35165;
+    border-radius: 65px;
+    transform: rotate(-90deg);
+    transform-origin: 0;
+    filter: drop-shadow(4px 2px 4px #b8bdca);
+}
+
+.clock>.minute-hand {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 130px;
+    height: 8px;
+    background-color: #55596D;
+    border-radius: 15px;
+    transform: rotate(-90deg);
+    transform-origin: 0 4px;
+    filter: drop-shadow(3px 2px 1px #b8bdca);
+}
+
+.clock>.hour-hand {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 90px;
+    height: 9px;
+    background-color: #55596D;
+    border-radius: 65px;
+    transform: rotate(-90deg);
+    transform-origin: 0 4.5px;
+    filter: drop-shadow(3px 2px 1px #b8bdca);
+}
