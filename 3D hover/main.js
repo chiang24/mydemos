@@ -18,7 +18,7 @@
     //    let x2Deg = xPercent*3
     //    let y2Deg = yPercent*4
        
-    //    banner.style.transform = `translateZ(-100px) rotateX(${-y1Deg}deg) rotateY(${x1Deg}deg) `
-       description.style.transform = `translateZ(0px) rotateX(${y2Deg}deg) rotateY(${x2Deg}deg) `
+       banner.style.transform = `translateZ(-100px) rotateX(${-y1Deg}deg) rotateY(${x1Deg}deg) `
+      // description.style.transform = `translateZ(0px) rotateX(${y2Deg}deg) rotateY(${x2Deg}deg) `
 
    })
