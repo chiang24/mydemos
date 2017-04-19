@@ -1,0 +1,74 @@
+body{
+  height:100vh;
+   margin: 0;
+  background: radial-gradient(circle at 50% 0, #222430, #474855);
+  display:flex;
+  justify-content:center;
+   align-items: center;
+  perspective: 1000px;
+  cursor: pointer;
+}
+#banner{
+  width:650px;
+  height:250px;
+  background-color:#FFFFFF;
+   box-shadow: 2px 2px 3px 6px #EAEAEA;
+  border-radius:6px;
+  
+  transition: all 0.3s linear;
+}
+#banner>.iconwrapper{
+  margin-top:25px;
+  margin-left:25px;
+  width:140px;
+  border:1px solid #fbfbfb;
+  box-shadow: 1px 1px 5px 3px #B9B9B9;
+}
+
+#banner>.iconwrapper .icon{
+  padding:10px 10px 5px 10px;
+  width:120px;
+}
+#banner>.right{
+  width:460px;
+   display:flex;
+  justify-content:center;
+   align-items:flex-start;
+  flex-direction:column;
+  margin-left:192px;
+  margin-top:-164px;
+  
+}
+h1{
+  font-size:30px;
+}
+#banner>.right .name,.description{
+  color:#576273;
+}
+#banner>.img{
+  width:100%;
+  border-top:2px solid #BEBFC0;
+  position:relative;
+  bottom:-80px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+}
+#banner>.img>div img{
+  width:30px;
+   position:absolute;
+   top:50%;
+}
+
+#banner>.img>div span {
+  position:absolute;
+  margin-left:32px;
+  line-height:31px;
+}
+#banner>.img>div a{
+  text-decoration: none;
+   position:relative;
+  top:15px;
+  margin-left:32px;
+  color:#5AA2FF;
+}
