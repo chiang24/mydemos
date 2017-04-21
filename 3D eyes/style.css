@@ -1,0 +1,278 @@
+body {
+    background-color: #3AC3E0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    cursor: pointer;
+    height: 100vh;
+}
+
+.eyes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+/*leftE、rightE外层*/
+
+.eyes>.leftE,
+.eyes>.rightE {
+    background-color: #014260;
+    height: 280px;
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotateX(0deg) rotateY(0deg);
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    border-radius: 50%;
+    box-shadow: -25px 20px 0px #299AAF;
+    margin-top: 50px;
+}
+
+.eyes>.leftE {
+    margin-right: 60px;
+}
+
+.eyes>.leftE .child,
+.eyes>.rightE .child {
+    width: 230px;
+    height: 230px;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.eyes>.leftE .child>div,
+.eyes>.rightE .child>div {
+    border: 2px solid #F2E1D9;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+}
+
+
+/*leftE、rightE白色内圈*/
+
+.eyes>.leftE>.child>div:nth-child(1),
+.eyes>.rightE>.child>div:nth-child(1) {
+    margin-left: -92px;
+    margin-top: -92px;
+    width: 180px;
+    height: 180px;
+}
+
+.eyes>.leftE>.child>div:nth-child(2),
+.eyes>.rightE>.child>div:nth-child(2) {
+    margin-left: -82px;
+    margin-top: -82px;
+    width: 160px;
+    height: 160px;
+}
+
+.eyes>.leftE>.child>div:nth-child(3),
+.eyes>.rightE>.child>div:nth-child(3) {
+    margin-left: -72px;
+    margin-top: -72px;
+    width: 140px;
+    height: 140px;
+}
+
+.eyes>.leftE>.child>div:nth-child(4),
+.eyes>.rightE>.child>div:nth-child(4) {
+    margin-left: -62px;
+    margin-top: -62px;
+    width: 120px;
+    height: 120px;
+}
+
+
+/*leftE、rightE中间层*/
+
+.eyes>.leftE .child:nth-child(1),
+.eyes>.rightE .child:nth-child(1) {
+    background: #EE4922;
+    width: 230px;
+    height: 230px;
+    transform: translateZ(50px);
+    border: 5px solid #002F4A;
+}
+
+
+/*leftE、rightE眼珠*/
+
+.eyes>.leftE .child:nth-child(2),
+.eyes>.rightE .child:nth-child(2) {
+    background: #E2DC2C;
+    width: 90px;
+    height: 90px;
+    transform: translateZ(100px);
+    box-shadow: -20px 10px 0px rgba(149,58,42,0.8);
+}
+
+
+/*leftE、rightE眼白*/
+
+.eyes>.leftE>.child>#eyesWhite1,
+.eyes>.rightE>.child>#eyesWhite2 {
+    border-radius: 35px 0px 0px 35px;
+    height: 70px;
+    width: 35px;
+    background-color: #ECE88B;
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    margin-left: -30px;
+    transform: translateZ(150px) rotate(20deg);
+}
+
+
+/*nose*/
+
+.nose {
+    width: 135px;
+    height: 50px;
+    margin-top: 85px;
+    box-shadow: -15px 15px 0px #299AAF;
+}
+
+.nose>.part1N {
+    width: 135px;
+    height: 25px;
+    background-color: #F3F3F4;
+}
+
+.nose>.part2N {
+    width: 135px;
+    height: 25px;
+    background-color: #CFD4DA;
+}
+
+
+/*mouth*/
+
+.mouth {
+    width: 280px;
+    height: 60px;
+    margin-top: 100px;
+    border-radius: 50px;
+    box-shadow: -15px 15px 0px #299AAF;
+}
+
+.mouth>.part1M {
+    width: 280px;
+    height: 30px;
+    background-color: #F3F3F4;
+    border-radius: 50px 50px 0px 0px;
+}
+
+.mouth>.part2M {
+    width: 280px;
+    height: 30px;
+    background-color: #CFD4DA;
+    border-radius: 0px 0px 50px 50px;
+}
+
+.mouth>.part1M div {
+    border-width: 3px 3px 0 0;
+    border-color: #001B34;
+    border-style: solid;
+    background-color: #014260;
+    position: absolute;
+}
+
+
+/*牙齿*/
+
+.mouth>.part1M div:nth-child(1) {
+    width: 8px;
+    height: 42px;
+    margin-top: 8px;
+    margin-left: 37px;
+}
+
+.mouth>.part1M div:nth-child(2) {
+    width: 8px;
+    height: 42px;
+    margin-top: 8px;
+    margin-left: 57px;
+}
+
+.mouth>.part1M div:nth-child(3) {
+    width: 8px;
+    height: 42px;
+    margin-top: 8px;
+    margin-left: 77px;
+}
+
+.mouth>.part1M div:nth-child(4) {
+    width: 8px;
+    height: 42px;
+    margin-top: 8px;
+    margin-left: 97px;
+}
+
+.mouth>.part1M div:nth-child(5) {
+    width: 8px;
+    height: 42px;
+    margin-top: 8px;
+    margin-left: 117px;
+}
+
+.mouth>.part1M div:nth-child(6) {
+    width: 8px;
+    height: 42px;
+    margin-top: 8px;
+    margin-left: 137px;
+}
+
+.mouth>.part1M div:nth-child(7) {
+    width: 8px;
+    height: 42px;
+    margin-top: 8px;
+    margin-left: 157px;
+}
+
+.mouth>.part1M div:nth-child(8) {
+    width: 8px;
+    height: 42px;
+    margin-top: 8px;
+    margin-left: 177px;
+}
+
+.mouth>.part1M div:nth-child(9) {
+    width: 8px;
+    height: 42px;
+    margin-top: 8px;
+    margin-left: 197px;
+}
+
+.mouth>.part1M div:nth-child(10) {
+    width: 8px;
+    height: 42px;
+    margin-top: 8px;
+    margin-left: 217px;
+}
+
+.mouth>.part1M div:nth-child(11) {
+    width: 8px;
+    height: 42px;
+    margin-top: 8px;
+    margin-left: 237px;
+}
+
+
+/*design&code info*/
+
+.info {
+    width: 200px;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+    text-align: center;
+    color: #014260;
+}
