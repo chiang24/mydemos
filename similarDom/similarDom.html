@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的一个Dom库</title>
+    <style>
+        li {
+            list-style-type: none;
+        }
+
+        .hi {
+            color: red;
+            border: 1px solid #686868;
+        }
+
+        .error {
+            color: green;
+            border: 1px solid #fbfbfb;
+        }
+
+        .active {
+            color: blue;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li class='error'>1</li>
+        <li class='error'>2</li>
+        <li class='error'>3</li>
+        <li class='error'>4</li>
+    </ul>
+
+    <script src="similarDom.js"></script>
+    <script>
+        // 封装名字为$的一个DOM库
+        console.assert(typeof $ === 'function')
+        
+        //获取document里的全部li
+        let items = $('li')
+        console.log(items)
+        
+        //给items调用自定义函数
+        items.on('click', function () {
+            console.log('click')
+        })
+        console.assert(typeof items.on === 'function') 
+
+        //添加、删除类名
+        items.addClass('hi').removeClass('error')
+        console.assert(items.addClass('hi') === items)
+
+        //如果传入参数，则点击items设置文本内容，如果没有传入参数，则为读取items文本内容
+        items.text('设置了文本')
+        let textList = items.text()
+        console.assert(items.addEventListener === undefined)
+        console.log(textList)
+
+        //获取第一个items第一个元素
+        let item = items.get(0)
+        let $item = $(item)  //封装item，使item可以使用$内的API
+        console.log($item)
+        console.assert(item.tagName === 'LI')
+
+        //获取指定节点所有的兄弟节点
+        console.log($item.siblings())
+        console.assert(item.siblings === undefined)
+        console.assert($item.siblings().previousSelection === $item.siblings().end())
+        $li = $('li:nth-child(2)').siblings().addClass('error')
+        $li.siblings().removeClass('error').end().addClass('active').text('再次设置文本')
+    </script>
+</body>
+
+</html>
