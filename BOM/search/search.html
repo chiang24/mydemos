@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
 </head>
+
 <body>
-  
- <button id="getSearch">获取查询参数</button>
- <script src='./main.js'>
-     
- </script>
+
+  <button id="getSearch">查询参数</button>
+
+  <script src='./main.js'></script>
   <script>
-//http://xxx.com/index.html?a=1
-$.bom.search('a')  // 1
-$.bom.search('a', 'xxx')
-//http://xxx.com/index.html?a=xxx
-  </script>   
+    // http://xxx.com/index.html?a=1
+    //http://xxx.com/index.html?a=xxxs
+    getSearch.onclick = function () {
+
+      $.bom.search('a', 'xxx') //设置查询字符串a=value
+      // $.bom.search('a')      // 获取a的value
+      console.log($.bom.search('a'))
+
+    }
+  </script>
 </body>
+
 </html>
