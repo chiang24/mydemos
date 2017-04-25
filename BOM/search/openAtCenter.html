@@ -7,14 +7,16 @@
     <title>Document</title>
 </head>
 <body>
- <button id="openWindow">open a window</button>
+  
+ <button id="getSearch">获取查询参数</button>
  <script src='./main.js'>
      
  </script>
   <script>
-    openWindow.onclick = function(){
-      $.bom.openAtCenter(400,400,'https://www.baidu.com')
-    }
+//http://xxx.com/index.html?a=1
+$.bom.search('a')  // 1
+$.bom.search('a', 'xxx')
+//http://xxx.com/index.html?a=xxx
   </script>   
 </body>
 </html>
