@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <script src="./main.js"></script>
+    <meta charset="utf-8">
+    <title>slides</title>
+    <style>
+        /* 使用者写的css */
+
+        .slide {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 60spx;
+        }
+
+        .slide {
+            background: #ddd;
+        }
+
+        .slides>.controls li {
+            background-color: #fff;
+            border-radius: 50%;
+            width: 8px;
+            height: 8px;
+            margin-left: 5px;
+        }
+
+        .slides>.controls li.active {
+            width: 20px;
+            height: 8px;
+            display: flex;
+            border-radius: 5px;
+            justify-content: center;
+            background-color: #FC9B9F;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="slides">
+        <div class="view">
+            <div class="slide">1</div>
+            <div class="slide">2</div>
+            <div class="slide">3</div>
+            <div class="slide">4</div>
+        </div>
+    </div>
+    <script>
+        slides(document.querySelectorAll('.slides')[0])
+        //slides(document.querySelectorAll('.slides')[1])
+    </script>
+</body>
+
+</html>
