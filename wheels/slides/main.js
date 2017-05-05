@@ -46,6 +46,7 @@ window.slides = function (element) {
         if (index === 0) {
             let $li = $el.find('.slide').eq(0).clone()          //在最后克隆第一张
             $li.appendTo($view)
+            var width = $el.width()
             let number = -width * count                         //退回到第一个移动宽度
             $view.css({
                 transform: `translateX(${number}px)`            //设置动画
@@ -69,6 +70,7 @@ window.slides = function (element) {
         }
 
         //顺序播放
+        var width = $el.width()
         let number = -width * index                               //顺序播放移动宽度
         $view.css({
             transform: `translateX(${number}px)`
