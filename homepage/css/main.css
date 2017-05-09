@@ -1,0 +1,355 @@
+/*reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Gibson-Light';
+    src: url('../font/gibson-light-webfont.woff');
+    /* IE9 Compat Modes */
+    src: url('../font/gibson-light-webfont.woff?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../font/gibson-light-webfont.woff') format('woff'), /* Modern Browsers */
+    url('../font/gibson-light-webfont.woff') format('truetype'), /* Safari, Android, iOS */
+    url('../font/gibson-light-webfont.woff#YourWebFontName') format('svg');
+    /* Legacy iOS */
+}
+
+body {
+    font-family: 'Gibson-Light';
+    color: #2c2a29;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Gibson-Light';
+    color: #2c2a29;
+    transition: all 0.5s ease-in-out;
+}
+
+.wrapper>header>#topbar>nav a:hover,
+.wrapper>section>.textCenter a:hover,
+.services .wrapper4 ul li a:hover {
+    color: #ffa38b;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*wrapper*/
+
+header {
+    width: 100%;
+    position: absolute;
+}
+
+#topbar {
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+
+/*#topbar::after,
+header::after
+{
+    content: '';
+    display: table;
+    clear: both;
+}
+.wrapper>header>#topbar>.logo{
+float: left;
+}*/
+
+.wrapper>header>#topbar>nav {
+    /*float: right;*/
+    margin-top: 8px;
+}
+
+.wrapper>header>#topbar>nav a {
+    font-size: 20px;
+    color: #fff;
+    line-height: 31px;
+    margin-left: 15px;
+}
+
+.wrapper>header>#topbar>.logo>img {
+    vertical-align: top;
+}
+
+.wrapper>section {
+    background: url(../img/hero-1@2x.jpg);
+    background-color: rgba(0, 0, 0, 0.6);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 220px 300px;
+}
+
+.wrapper>section>.textCenter {
+    max-width: 700px;
+    text-align: center;
+}
+
+.wrapper>section>.textCenter h1 {
+    font-size: 48px;
+    line-height: 65px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.wrapper>section>.textCenter a {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+}
+
+.wrapper>section>.textCenter a::after,
+.services>div>ul li .LearnMore>a::after {
+    content: '';
+    border-top: 1px solid #ffa38b;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin-bottom: -10px;
+    transition: all 0.5s ease-in-out;
+}
+
+
+/*about*/
+
+.about {
+    display: flex;
+    justify-content: center;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.about .wrapper2 {
+    max-width: 950px;
+    text-align: center;
+}
+
+.about p {
+    font-size: 32px;
+    line-height: 45px;
+}
+
+
+/*slides*/
+
+.slider {
+    display: flex;
+    justify-content: center;
+    align-content: center
+}
+
+
+/*introduction*/
+
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 70px;
+    padding-bottom: 100px;
+}
+
+.introduction .wrapper3 {
+    width: 35%;
+    margin-right: 50px;
+    text-align: left;
+}
+
+.introduction>.wrapper3 .p1 {
+    font-size: 25px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.introduction>.wrapper3 .p2 {
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.introduction img {
+    margin-left: 0px;
+    max-height: 500px;
+}
+
+
+/*services*/
+
+.services {
+    background: #eee8e2;
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.services h1 {
+    text-align: center;
+    font-size: 32px;
+    line-height: 45px;
+    font-weight: 500;
+    margin: 0 0 40px 0;
+}
+
+.services .wrapper4 ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services .wrapper4 ul li {
+    margin-left: 30px;
+}
+
+.services a {
+    display: block;
+    transition: all 0.5s ease-in-out;
+    margin-bottom: 25px;
+}
+
+.services>div>ul li .LearnMore {
+    position: relative;
+    max-width: 80px;
+}
+
+.services .wrapper4 ul li h3 a {
+    font-size: 24px;
+    line-height: 32px;
+    margin-top: 20px;
+    font-family: 'Gibson-Light';
+    font-weight: normal;
+}
+
+.services .wrapper4 ul li p {
+    font-size: 17px;
+    line-height: 27px;
+    min-height: 110px;
+    max-width: 374px;
+}
+
+
+/*joinUs*/
+
+.joinUs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.joinUs>ul {
+    min-width: 1050px;
+    text-align: center;
+    display: flex;
+    justify-content:space-around;
+}
+
+
+.joinUs>ul li {
+    display: inline-block;
+ 
+}
+
+.joinUs>ul>li p {
+    font-size: 24px;
+    line-height: 32px;
+}
+
+input {
+    border: none;
+    border-bottom: 1px solid #2c2a29;
+    padding: 10px 0;
+}
+
+button {
+    border: none;
+    background: transparent;
+    font-size: 17px;
+    margin-left: 25px;
+    padding: 10px 0 4px 0;
+    display: inline-block;
+}
+
+
+.joinUs>ul>li:nth-child(4) {
+    position: relative;
+}
+
+button:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-left: 25px;
+    border-top: 1px solid #ffa38b;
+        transition: all 0.5s ease-in-out;
+}
+
+
+/*footer*/
+
+footer {
+    background: #ffa38b;
+    padding: 60px;
+}
+
+footer .wrapper5 {
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-left: 80px;
+}
+
+.wrapper5 h4 {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.wrapper5 p {
+    font-size: 17px;
+    line-height: 27px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.wrapper5 a {
+    color: #fff;
+    font-size: 17px;
+    line-height: 27px;
+}
+
+.webDesign {
+    width: 100%;
+    position: relative;
+    top: 45px;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+}
