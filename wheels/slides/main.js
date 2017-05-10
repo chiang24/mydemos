@@ -70,10 +70,7 @@ window.slides = function (element) {
         }
 
         //顺序播放
-<<<<<<< HEAD
-        
-=======
->>>>>>> ab2c1ccd0ddb740221d106ab46634142f8d6e44f
+
         var width = $el.width()
         let number = -width * index                               //顺序播放移动宽度
         $view.css({
