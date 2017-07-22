@@ -207,28 +207,33 @@ p {
     padding-top: 20px;
 }
 
-/*skill-description*/
+/*skill-description&&individual-project*/
 
-.skill-description {
+.skill-description,
+.individual-project {
     border-bottom: 2px solid #D2D2D2;
     padding-bottom: 20px;
     padding-left: 20px;
 }
 
-.skill-description h2 {
+.skill-description h2,
+.individual-project h2 {
     padding-top: 15px;
     padding-bottom: 20px;
 }
 
-.skill-description>.skill-description-content li>ul {
+.skill-description>.skill-description-content li>ul,
+.individual-project>.individual-project-content li>ul {
     padding-bottom: 5px;
 }
 
-.skill-description>.skill-description-content li>ul>li {
+.skill-description>.skill-description-content li>ul>li,
+.individual-project>.individual-project-content li>ul>li{
     list-style: none;
-     padding-bottom: 15px;
 }
-
+.individual-project>.individual-project-content li>ul>li{
+    padding-bottom: 15px;
+}
 
 /*aboutme*/
 
