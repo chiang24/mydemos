@@ -198,7 +198,6 @@ p {
     border-bottom: 2px solid #D2D2D2;
     padding-bottom: 20px;
 }
-
 .practice h2 {
     padding-top: 15px;
 }
@@ -227,7 +226,9 @@ p {
 
 .skill-description>.skill-description-content li>ul>li {
     list-style: none;
+     padding-bottom: 15px;
 }
+
 
 /*aboutme*/
 
